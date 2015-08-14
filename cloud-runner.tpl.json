@@ -1,0 +1,52 @@
+{
+  "name":"docker runner test",
+  "appId": "cloud-runner-0.1.0u4",
+  "batchQueue": "debug",
+  "executionSystem": "docker.iplantcollaborative.org",
+  "maxRunTime": "01:00:00",
+  "memoryPerNode": "1GB",
+  "nodeCount": 1,
+  "processorsPerNode": 1,
+  "archive": true,
+  "archiveSystem": "data.iplantcollaborative.org",
+  "archivePath": null,
+  "inputs": {
+    "dockerFile": [
+      "http://lorempixel.com/640/480/sports/?key=SKlF4e5fTMdU",
+      "http://lorempixel.com/640/480/sports/?key=XhYzzb4e87UQ",
+      "agave://data.iplantcollaborative.org/dooley/inputs/hqoz5bPmSFmj.dat",
+      "http://lorempixel.com/640/480/sports/?key=+NowG6r1Htou",
+      "http://lorempixel.com/640/480/sports/?key=3bMtyMN0vSrn"
+    ],
+    "appBundle": [
+      "http://lorempixel.com/640/480/sports/?key=pf54jfl5EBGz",
+      "http://lorempixel.com/640/480/sports/?key=WThfP5OGD10W",
+      "agave://data.iplantcollaborative.org/dooley/inputs/hSqI6fAxz0Sx.dat",
+      "http://lorempixel.com/640/480/sports/?key=ljnr/B/zqlEl",
+      "http://lorempixel.com/640/480/sports/?key=vqa7qIjkbFHR"
+    ]
+  },
+  "parameters": {
+    "dockerImage": "agaveapi/scipy-matplot-2.7",
+    "command": "python",
+    "unpackInputs": true,
+    "commandArgs": "main.py"
+  },
+  "notifications": [
+    {
+      "url":"http://requestbin.agaveapi.co/10pkej11?job_id=${JOB_ID}&status=${JOB_STATUS}",
+      "event":"*",
+      "persistent":true
+    },
+    {
+      "url":"dooley@tacc.utexas.edu",
+      "event":"FINISHED",
+      "persistent":false
+    },
+    {
+      "url":"dooley@tacc.utexas.edu",
+      "event":"FAILED",
+      "persistent":false
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* Body */
+body {
+  padding-bottom: 0px;
+}
+a, a:hover {
+  color: #04a5B7;
+}
+.popover {
+  z-index: 2000;
+}
+button.btn-primary {
+  background: #04a5B7;
+  border: 1px solid #04a5B7;
+}
+button.btn-primary:hover {
+  background: #0492A1;
+  border: 1px solid #04a5B7;
+}
+button.btn-success {
+  background: #c3bc83;
+  border: 1px solid #c3bc83;
+}
+button.btn-success:hover {
+  background: #B2AB76;
+  border: 1px solid #c3bc83;
+}
+button.btn-danger {
+  background: #d96727;
+  border: 1px solid #d96727;
+}
+button.btn-danger:hover {
+  background: #CD6327;
+  border: 1px solid #d96727;
+}
+/* Navigation */
+#navigation {
+  background: #04a5B7;
+  border-bottom: 8px solid #ddd;
+  margin-top: 0;
+
+}
+.navbar-inverse .navbar-brand {
+  background: url('../img/iplant-bloom-logo.png') top left no-repeat;
+  background-size: contain;
+  color: #FFF;
+  width: 145px;
+  text-align: left;
+  line-height: 15px;
+  padding: 5px 0 0px 43px;
+  margin-top: 5px;
+  font-size: 1.1em;
+  margin-left: 15px;
+}
+.navbar-right button.social {
+  margin-top: -11px;
+}
+.navbar-right #twitter-widget-0 {
+  margin-top: 15px;
+}
+@media (min-width: 768px) {
+  .navbar>.container .navbar-brand {
+    margin-left: 0px;
+  }
+}
+
+#navigation .navbar-inverse .navbar-brand,
+#navigation .navbar-nav>li>a,
+.navbar-inverse .navbar-brand,
+#navigation .navbar-inverse a.navbar-brand:hover,
+#navigation .navbar-inverse a.navbar-brand:focus {
+  color: #FFF;
+}
+
+#navigation .dropdown-menu {
+  background: #000;
+  color: #FFF;
+  text-align: left;
+}
+#navigation .dropdown-menu>li>a {
+  color: #FFF;
+}
+
+#navigation .dropdown-menu>li>a:hover,
+#navigation .dropdown-menu>li>a:focus,
+#navigation .dropdown-menu>.active>a,
+#navigation .dropdown-menu>.active>a:hover,
+#navigation .dropdown-menu>.active>a:focus {
+  background: #000;
+  color: #04a5B7;
+}
+
+/* header */
+.jumbotron {
+  background: #04a5B7 url('../img/jumbotron_bg.jpg') 50% 50% no-repeat;
+  background-size: contain;
+  color: #FFF;
+}
+
+#startTutorial {
+  margin-top: 25px;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  background: #2c3237 url('../img/stripes.png') top left repeat;
+  color: #fff;
+}
+footer .row {
+  padding:25px 0;
+}
+
+footer .funding-logos .nsf {
+  width: 40px;
+  height: 40px;
+}
+footer .funding-logos .niaid {
+  margin-top: 10px;
+  height: 40px;
+  padding-left: 3px;
+}
+
+/* Monitoring section */
+#job-panel {
+  box-shadow: 0 0 0;
+  border: 0;
+}
+.nav-tabs {
+  border-bottom: 0px;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+  background-color: #04a5B7;
+  border: 0;
+}
+
+/* animations */
+.glyphicon-refresh-animate {
+    -animation: spin .7s infinite linear;
+    -webkit-animation: spin2 .7s infinite linear;
+}
+
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}
