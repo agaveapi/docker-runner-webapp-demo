@@ -1,7 +1,7 @@
 jQuery(document).ready(function() {
 
     //jQuery('form#upload_form').uploadProgress({keyLength: 11 });
-    OAuth.initialize('X5i9WnqNjrtbFPz1lCAHd6Wvn-A');
+    OAuth.initialize('ItGn0eTyFGTaUgQg20Esb_KwTOY');
 
     $('#signin').click(function(e) {
         e.preventDefault();
